@@ -17,8 +17,8 @@ Variables de entrada:
 - n número total de entradas
 - x valor del número ingresado
 - med resultado de la media aritmética
-- max valor máximo de todas los números ingresados
-- min valor mínimo de todas los números ingresados
+- max valor máximo de todos los números ingresados
+- min valor mínimo de todos los números ingresados
 
 ## Problema 3
 ![Problema3](/Problemas_Programacion/Imagenes/Problema3.png)
@@ -37,3 +37,9 @@ Variables de entrada:
 
 ## Problema 5 
 ![Problema5](/Problemas_Programacion/Imagenes/Problema5.png)
+Variables de entrada:
+- N1 primer entero como entrada
+- N2 segundo número como entrada
+- primo variable de control
+- i variable de control del primer ciclo while (Fase de procesamiento)
+- j variable de control del segundo ciclo while (Es_Entero)
