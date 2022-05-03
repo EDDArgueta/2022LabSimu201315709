@@ -12,7 +12,7 @@ Variables de entrada:
 - n: determina el número de elementos presentes en un arreglo 
 
 ### Grafica de y = 445515x + 19.666667
-![Grafica2](/Segundo_Parcial/Imagenes/Grafica1.png)
+![Grafica1](/Segundo_Parcial/Imagenes/Grafica1.png)
 
 Respuesta:
 En 23 semanas el precio del combustible alcanzará su precio tope de Q30.00 por galón.
