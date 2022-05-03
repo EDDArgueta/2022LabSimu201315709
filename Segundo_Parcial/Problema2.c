@@ -3,7 +3,7 @@ Autor:		    Edwin Argueta
 Fecha:		    Sat Apr 30 18:35:05 CST 2022
 Compilador:	    gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 Compilar:       gcc -o Problema2.out Problema2.c -lm
-Librerías:	    stdio
+Librerías:	    stdio y math
 Resumen:		Este programa calcula la raíz aproximada de la función 
                 f(x) = 2 + Cos(e^x - 2) - e^x utilizando el método nu-
                 mérico de Newton-Raphson.
