@@ -13,7 +13,7 @@ Le solicitan que genere un programa el cual cumpla con las siguientes condicione
 - Asumiendo que el gobierno tiene un tope de 30 quetzales por galón, determine en cuánto tiempo se
 llegará a ese tope si el precio mantiene este comportamiento.
 
-### Metodología
+### Metodología y abstracción del problema
 Para poder predecir en cuánto tiempo el precio del combustible alcanzaría el precio límite, era necesario conocer la ecuación de la recta "y = ax + b". Donde el valor de los coeficientes a (m = pendiente) y b, podían ser determinados mediante las siguientes fórmulas:
 
 ![Coeficientes](/Segundo_Parcial/Imagenes/coef.png)
@@ -46,19 +46,41 @@ Una vez escrito y compilado el programa se obtuvo que los valores de los coefici
 Respuesta:
 En 23 semanas el precio del combustible alcanzará su precio tope de Q30.00 por galón. 
 
-### Grafica de y = 445515x + 19.666667
+### Gráfica de y = 445515x + 19.666667
 ![Grafica1](/Segundo_Parcial/Imagenes/Grafica1.png)
 
 
 ## Problema 2
-![Problema2](/Segundo_Parcial/Imagenes/Seudocodigo2.png)
+Utilizando un método numérico, encuentre una raíz de la ecuación "f(x) = 2 + cos (e^x - 2)- e^x".
+Debe de realizar la gr´afica de la ecuación y comparar el resultado obtenido con el programa realizado en C.
 
+### Metodología y abstracción del problema
+El problema se decidió que iba a ser resuelto por el método de Newton-Raphson. Ya que este método se basa en utilizar la siguiente fórmula:
+
+
+![FórmulaNR](/Segundo_Parcial/Imagenes/formulaNR.png)
+
+Era necesario construir las siguientes tres funciones:
+
+- float f(float x): encargargada de valuar la funcion f(x) para cualquier valor que se le pasara como argumento. Sirve como función base para la función metodoNR.
+- float fDerivada(float x): encargargada de valuar la derivada de f(x) anterior para cualquier valor que se le pasara como argumento. Sirve como función base para la función metodoNR.
+- void metodoNR(float x0, float tolerancia, int maxIteraciones): era el método numérico como tal, aplicado para calcular la raíz aproximada acorde al valor de los argumentos.
+
+Una vez establecido las funciones necesarias para realizar los cálculos, se procedió a escribir el seudocódigo para ser implementado en el programa. Dentro del seudocódigo está detallado sobre cómo funciona el método de Newton-Raphson.
+
+![Problema2](/Segundo_Parcial/Imagenes/Seudocodigo2.png)
 
 Variables de entrada:
 - x0: primera aproximación de la raíz dada por el usuario
 - tolerancia: determina el número de decimales con  la que se desea hacer la aproximación
 - iteraciones: número de veces que se desea hacer la aproximación
 
-### Grafica de f(x) = 2 + Cos(e^x -2) - e^x
+Variables de salida:
+- raíz: contiene el valor de la respuesta en caso de que se encontrase la cero aproximado acorde a las variables de entradas
+- iteración: variable que sirve como contador para mostrar el número de iteraciones realizadas durante los cálculos
+
+NOTA: el valor de la respuesta depende del valor que se les de a las variables de entrada. Por lo general, es mejor escoger un x0 cercano a 1 (tal y como se puede apreciar en la grafica de f(x)) para que el programa pueda encontrar una raíz aproximada.
+
+### Gráfica de f(x) = 2 + Cos(e^x -2) - e^x
 ![Grafica2](/Segundo_Parcial/Imagenes/Grafica2.png)
 

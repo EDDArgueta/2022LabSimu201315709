@@ -4,11 +4,10 @@ Fecha:		    Tue Apr 26 17:05:57 CST 2022
 Compilador:	    gcc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 Compilar:       gcc -o Problema1.out Problema1.c -lm
 Librerías:	    stdio y math
-Resumen:		Probleama 1: Programa que determina la ecuación de la recta (por medio 
-                de minimos cuadrados, y = ax + b) que mejor se ajusta a una lista de da-
-                tos acerca de los precios del combustible por galón semanalmente. Apar-
-                tir de dicha ecuación, se puede predecir el valor del precio del combus-
-                tible en las siguientes semanas. 
+Resumen:		Probleama 1: Programa que determina la ecuación de la recta (por medio de minimos cuadrados, 
+                y = ax + b) que mejor se ajusta a una lista de datos acerca de los precios del combustible 
+                por galón semanalmente. Apartir de dicha ecuación, se puede predecir el valor del precio del 
+                combustible en las siguientes semanas. 
 */
 
 // librerías
